@@ -1,0 +1,12 @@
+[
+	{ "id": 46, "max-age": 365, "name":"Processor","get":["Socket"]},
+	{ "id": 47, "max-age": 548, "name":"Moederbord","get":["Form Factor"]},	
+	{ "id": 49, "max-age": 365, "name":"Grafische kaart"},
+	{ "id": 50, "max-age": 0, "name":"HDD"},
+	{ "id": 61, "max-age": 1000, "name":"Behuizing"},
+	{ "id": 488, "max-age": 0, "name":"Koeling"},
+	{ "id": 545, "max-age": 0, "name":"Geheugen"},
+	{ "id": 634, "max-age": 3650, "name":"Optische drive"},
+	{ "id": 664, "max-age": 0, "name":"Voeding"},
+	{ "id": 674, "max-age": 730, "name":"SSD"}
+]

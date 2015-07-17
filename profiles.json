@@ -1,0 +1,107 @@
+{
+    "Gamer": {
+		"total": [ 1200, "total" ],
+        "46": [13, "Processor"],
+        "47": [9, "Moederbord"],
+        "49": [39, "Grafische kaart"],
+        "50": [5, "HDD"],
+        "61": [7, "Behuizing"],
+        "488": [2, "Koeling"],
+        "545": [5, "Geheugen"],
+        "634": [2, "Optische drive"],
+        "664": [7, "Voeding"],
+        "674": [11, "SSD"]
+    },
+	"Budget": {
+		"total": [ 225, "total" ],
+        "46": [16, "Processor"],
+        "47": [16, "Moederbord"],
+        "49": [0, "Grafische kaart"],
+        "50": [0, "HDD"],
+        "61": [10, "Behuizing"],
+        "488": [0, "Koeling"],
+        "545": [13, "Geheugen"],
+        "634": [0, "Optische drive"],
+        "664": [14, "Voeding"],
+        "674": [32, "SSD"]
+    },
+	"Basis": {
+		"total": [ 350, "total" ],
+        "46": [26, "Processor"],
+        "47": [18, "Moederbord"],
+        "49": [0, "Grafische kaart"],
+        "50": [0, "HDD"],
+        "61": [9, "Behuizing"],
+        "488": [0, "Koeling"],
+        "545": [12, "Geheugen"],
+        "634": [0, "Optische drive"],
+        "664": [9, "Voeding"],
+        "674": [26, "SSD"]
+    },
+	"Budget games": {
+		"total": [ 425, "total" ],
+        "46": [16, "Processor"],
+        "47": [13, "Moederbord"],
+        "49": [30, "Grafische kaart"],
+        "50": [12, "HDD"],
+        "61": [9, "Behuizing"],
+        "488": [0, "Koeling"],
+        "545": [10, "Geheugen"],
+        "634": [0, "Optische drive"],
+        "664": [9, "Voeding"],
+        "674": [0, "SSD"]
+    },
+	"Basis games": {
+		"total": [ 650, "total" ],
+        "46": [22, "Processor"],
+        "47": [9, "Moederbord"],
+        "49": [33, "Grafische kaart"],
+        "50": [11, "HDD"],
+        "61": [8, "Behuizing"],
+        "488": [0, "Koeling"],
+        "545": [10, "Geheugen"],
+        "634": [0, "Optische drive"],
+        "664": [7, "Voeding"],
+        "674": [0, "SSD"]
+    },	
+	"Mainstream games": {
+		"total": [ 1000, "total" ],
+        "46": [20, "Processor"],
+        "47": [8, "Moederbord"],
+        "49": [27, "Grafische kaart"],
+        "50": [7, "HDD"],
+        "61": [7, "Behuizing"],
+        "488": [4, "Koeling"],
+        "545": [7, "Geheugen"],
+        "634": [0, "Optische drive"],
+        "664": [6, "Voeding"],
+        "674": [14, "SSD"]
+    },	
+	"Highend games": {
+		"total": [ 1500, "total" ],
+        "46": [14, "Processor"],
+        "47": [9, "Moederbord"],
+        "49": [49, "Grafische kaart"],
+        "50": [5, "HDD"],
+        "61": [6, "Behuizing"],
+        "488": [2, "Koeling"],
+        "545": [3, "Geheugen"],
+        "634": [0, "Optische drive"],
+        "664": [7, "Voeding"],
+        "674": [5, "SSD"]
+    },
+	
+	"Workstation": {
+		"total": [ 1000, "total" ],
+        "46": [26, "Processor"],
+        "47": [14, "Moederbord"],
+        "49": [11, "Grafische kaart"],
+        "50": [7, "HDD"],
+        "61": [8, "Behuizing"],
+        "488": [3, "Koeling"],
+        "545": [12, "Geheugen"],
+        "634": [0, "Optische drive"],
+        "664": [7, "Voeding"],
+        "674": [12, "SSD"]
+    }
+}

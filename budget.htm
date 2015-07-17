@@ -1,0 +1,127 @@
+<p>
+	Stel hier het budget voor uw computer. Nadat u het totale bedrag heeft ingevoerd
+	(zonder monitor of invoerapparaten) kunt u een profiel kiezen dat bij u hoort,
+	of rondspelen met de budget sliders hieronder.
+	<br/ > <br />
+	<table>
+		<tr>
+			<td> Totaal budget: </td>
+			<td> Profiel: </td>
+		</tr>
+		<tr>
+			<td> <input type="number" min=50 max=10000 step=10 value=0 id="total"/> <label  for="total">&euro;</label></td>
+			
+			<td> 
+				
+				<select id="profiel">
+					<option id="op_custom" value="Custom">Aangepast</option>
+					<option id="op_budget" value="Budget">Budget</option>
+					<option id="op_basis" value="Basis">Basis</option>
+					<option id="op_budget_gamer" value="Budget games">Budget - Gamer</option>
+					<option id="op_basis_gamer" value="Basis games">Basis - Gamer</option>
+					<option id="op_mainstream_gamer" value="Mainstream games">Mainstream - Gamer</option>
+					<option id="op_highend_gamer" value="Highend games">High end - Gamer</option>
+					<option id="op_workstation" value="Workstation">Workstation</option>
+				</select>
+				<label for="profiel">&#x25BC;</label>
+				
+			</td>
+		</tr>
+	</table>
+	<br/>
+</p>
+<table id="budgetsliders">	
+	<thead>
+		<th>Onderdeel</th>
+		<th>Percentage</th>
+		<th>Euro</th>
+	</thead>
+	<tbody>		
+		<tr>
+			<td>Processor</td>
+			<td>
+				<input type="range" value=10 min=0 max=100 step=0.1 name="46"/>
+				<progress type="range" value=10 min=0 max=100/>
+			</td>
+			<td>0&euro;</td>
+		</tr>
+		<tr>
+			<td>Grafische kaart</td>
+			<td>
+				<input type="range" value=10 min=0 max=100 step=0.1 name="49"/>
+				<progress type="range" value=10 min=0 max=100/>
+			</td>
+			<td>0&euro;</td>
+		</tr>
+		<tr>
+			<td>Moederbord</td>
+			<td>
+				<input type="range" value=10 min=0 max=100 step=0.1 name="47"/>
+				<progress type="range" value=10 min=0 max=100/>
+			</td>
+			<td>0&euro;</td>
+		</tr>
+		<tr>
+			<td>Intern geheugen</td>
+			<td>
+				<input type="range" value=10 min=0 max=100 step=0.1 name="545" />
+				<progress type="range" value=10 min=0 max=100/>
+			</td> 
+			<td>0&euro;</td>
+		</tr>
+		<tr>
+			<td>HDD</td>
+			<td>
+				<input type="range" value=10 min=0 max=100 step=0.1 name="50"/>
+				<progress type="range" value=10 min=0 max=100/>
+			</td>
+			<td>0&euro;</td>
+		</tr>
+		<tr>
+			<td>SSD</td>
+			<td>
+				<input type="range" value=10 min=0 max=100 step=0.1 name="674" />
+				<progress type="range" value=10 min=0 max=100/>
+			</td>
+			<td>0&euro;</td>
+		</tr>
+		<tr>
+			<td>Voeding</td>
+			<td>
+				<input type="range" value=10 min=0 max=100 step=0.1 name="664" />
+				<progress type="range" value=10 min=0 max=100/>
+			</td>
+			<td>0&euro;</td>
+		</tr>
+		<tr>
+			<td>Behuizing</td>
+			<td>
+				<input type="range" value=10 min=0 max=100 step=0.1 name="61"/>
+				<progress type="range" value=10 min=0 max=100/>
+			</td>
+			<td>0&euro;</td>
+		</tr>
+		<tr>
+			<td>Koeling</td>
+			<td> 
+				<input type="range" value=10 min=0 max=100 step=0.1 name="488"/>
+				<progress type="range" value=10 min=0 max=100/>
+			</td>
+			<td>0&euro;</td>
+		</tr>
+		<tr>
+			<td>Optische drive</td>
+			<td> 
+				<input type="range" value=10 min=0 max=100 step=0.1 name="634"/>
+				<progress type="range" value=10 min=0 max=100/>
+			</td>
+			<td>0&euro;</td>
+		</tr>
+		<tr id="sum">
+			<td>Totaal</td>
+			<td>0&euro;</td>
+			<td>0&euro;</td>
+		</tr>
+	</tbody>
+		
+</table>

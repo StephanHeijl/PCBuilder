@@ -1,0 +1,417 @@
+$backgroundColor:#1a1a1a;
+$pink:#f20051;
+$pinkDark:#b20841;
+$pinkLight:#FA3477;
+$purple:#a100f3;
+$purpleDark:#7908b2;
+$yellow:#FFE100;
+$yellowDark: #FFB300;
+$orange: #FF8000;
+$orangeDark: #DB620B;
+$red: #FF0000;
+$redDark: #DE0000;
+
+.black {
+	background: black;
+}
+.pink { 
+	background: $pink;
+}
+.purple { 
+	background: $purple;
+}
+.yellow {
+	background: $yellow;
+}
+.orange {
+	background: $orange;
+}
+.red {
+	background: $red;
+}
+
+body {
+	background-color: $backgroundColor;
+	font-family: 'Segoe UI Light', 'Segoe UI', 'Arial', 'sans-serif';
+	color: white;
+	margin: 0;
+	padding: 10px;
+	outline: 0;
+	font-size: 14pt;
+}
+
+#page {
+	width: 960px;
+	position:relative;	
+}
+
+header {
+	width: 100%;
+	position:relative;
+}
+
+h1 { 
+	font-size: 34pt;
+	display: inline-block;
+	font-weight:normal;
+	text-shadow: 0px 0px rgba(0,0,0,0);
+	font-smooth:always;
+	-webkit-font-smoothing: antialiased;
+	letter-spacing:-2pt;
+	border-bottom: 6px solid $pink ;
+	margin:0;
+	padding:0; 
+	margin-bottom: 9px;
+	width: 200px;
+	font-family: 'Segoe UI', 'sans-serif'; 
+}
+
+p {
+	margin:0;
+}
+
+.button, .fullSpread {
+	-webkit-mask-image: url("../img/maskButtonHBack.svg"); 
+	-webkit-mask-position: -25px 0px;
+	background-color:$pinkDark;
+	width:200px;
+	height:65px;
+	position: relative;
+	margin-bottom: 9px;
+	transition: 0.2s;
+	cursor: pointer;
+	display:block;
+	font-family:inherit;
+	z-index: 15;
+	-webkit-mask-repeat: no-repeat;	
+	
+	span {
+		display:block;
+		font-size: 14pt;
+		position: absolute;
+		margin: auto;
+		height: 1.6em;
+		top:0;
+		left:9px;
+		right:0;
+		bottom:0;
+	}
+}
+.fullSpread {
+	width:100%;
+	-webkit-mask-image: url("../img/maskFullBack.svg");  
+	mask: url("../img/maskFullBack.svg");  
+	transition: 0.2s;
+	-webkit-mask-position: 0px 0px;	
+	
+	&:before {
+		content: '';
+		width:100%;
+		position:absolute;
+		background: $pink;
+		height: 60px;
+		width:100%;
+		top:0;
+		left:0;
+		transition: 0.2s;
+		-webkit-mask-image: url("../img/maskFullTop.svg"); 
+		mask: url("../img/maskFullTop.svg"); 
+		-webkit-mask-position: 0px 0px;
+	}
+}
+.fullSpread:hover:before {
+	background: $pinkLight;
+}
+.button {
+	&:before {
+		content:'';
+		-webkit-mask-image: url("../img/maskButtonHTop.svg"); 
+		-webkit-mask-position: -25px 0px;
+		position:absolute;
+		background: $pink;
+		height: 60px;
+		width:100%;
+		top:0;
+		left:0;
+		transition: 0.2s; 
+	}
+
+	&:hover {
+		-webkit-mask-image: url("../img/maskButtonHBack.svg"); 
+		-webkit-mask-position: 0px 0px;
+		-webkit-mask-repeat: no-repeat; 
+		width:225px;
+		transition: 0.2s;
+	}
+
+	&:hover:before {
+		-webkit-mask-image: url("../img/maskButtonHTop.svg");
+		-webkit-mask-position: 0px 0px;
+		-webkit-mask-repeat: no-repeat;	
+		width:225px;
+		transition: 0.2s;
+	}
+	&#opstellenstarten {
+		background: $purpleDark;
+		
+		&:before {
+			background: $purple;
+		}
+	}
+}
+ 
+a {
+	color:inherit;
+}
+
+nav {
+	display: inline-block;
+	position: absolute;
+	margin: auto;
+	height: 30pt;
+	top:0;
+	bottom:0;
+	right:0;
+	
+	ul {
+		margin:0;
+		display: inline-block;
+
+		li {
+			list-style-type: none;
+			display:inline-block;
+			margin: 0px 20px 0px 20px;
+			padding-bottom: 6px;
+			font-size: 20pt;
+			border-bottom: 6px solid $pink ;
+			transition: 0.2s;
+			cursor: pointer;
+			letter-spacing:-1px;
+		}
+	}
+}
+
+nav ul li:not(.on):hover {
+	border-color:$pink;
+}
+
+nav ul li:not(.on) {
+	border-color:$pinkDark;
+}
+
+nav ul li:last-child {
+	margin-right: 0px;
+}
+
+#main {
+	width:100%;
+	position:relative;
+} 
+
+#categories {
+	vertical-align:top; 
+	display:inline-block; 
+	z-index: 0;
+	position:relative;
+	width:100%;
+}
+
+#content {
+	z-index:10;
+	vertical-align:top;
+	display:inline-block;
+	position:absolute;
+	right: 0;
+	width: 725px;
+	top: 75px;
+	height: 100%;
+}
+
+#results {
+	width: 100%;
+	border-collapse:collapse;
+	th {
+		text-align: left;
+	}
+	tr {
+		padding: 2px;
+	}
+	tbody>tr:hover {
+		background: #131313;
+	}
+	
+	.totalRow {
+		border-top: 2px solid white;
+		font-weight:bold;
+	}
+	.totalRow:hover {
+		background: transparent;
+	}
+}
+
+thead {
+	font-weight:bold;
+	text-align:left;
+}
+td { 
+	position: relative;
+}
+
+input[type=range] {
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 10;
+	width: 680px;
+	height:60px;
+	opacity:0; 
+	cursor: e-resize;
+}
+progress {
+	position: relative;
+	width: 680px;
+	height:40px;
+	top:0;
+	left: 0; 
+	z-index:0;
+	background:$yellow;
+	margin: 0; 
+}
+
+#budgetsliders tbody td:nth-child(2) {
+	max-width: 480px;
+	overflow:hidden;
+}
+
+tr#sum:last-child {
+	font-weight:bold;
+}
+
+progress::-webkit-progress-bar {
+	background: $backgroundColor;
+	
+}
+progress::-webkit-progress-value {
+	background: $pink;
+	height:35px;
+	border-bottom: 5px solid $pinkDark;
+}
+
+
+.rating { 
+	width:100px;
+	padding: 0.5em 0 0.5em 0;
+}
+
+.star {
+	width: 1em;
+	height: 1em;
+	border-radius:50%;
+	display:inline-block;
+	margin:1px;
+}
+
+.halfstar {
+	width: 1em;
+	height: 1em;
+	border-radius: 50%;
+	display:inline-block;
+	margin:1px;
+	-webkit-clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%, 0% 0%);
+}
+
+input[type=text],input[type=number],textarea, select {
+	border: 0;
+	background: white;
+	color: black;
+	font-family: inherit;
+	padding: 0.2em;
+	font-size: inherit;
+}
+
+input,select { 
+	outline:0;
+}
+
+#total { 
+	font-size: 24pt;
+	font-family: 'Segoe UI';
+	width: 200px;
+	-moz-appearance: none; 
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+#profiel {
+	font-size: 16pt;
+	font-family: 'Segoe UI';
+	padding: 13px 6px 13px 6px;
+	outline: 0;
+	width: 213px;
+	-moz-appearance: none; 
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+#total + label, #profiel + label {
+	position: absolute;
+	top: 0.25em;
+	right: 0.5em;
+	font-size: 24pt;
+	color:black;
+	font-family: 'Segoe UI';
+	pointer-events:none;
+}
+
+#partsloaded {
+	li {
+		list-style-type: square;
+	} 
+}
+
+#profiel + label {
+	font-size: 16pt;
+	top: 0.75em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+img.grayscale {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+    -webkit-backface-visibility: hidden; /* Fix for transition flickering */
+	opacity: 0.6;
+}
+
+img.grayscale:hover {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+    -webkit-filter: grayscale(0%);
+	opacity: 1;
+}
+
+img.fade {
+	-webkit-transition: all .6s ease;
+	opacity:0.6;
+}
+
+img.fade:hover {
+	-webkit-transition: all .6s ease;
+	opacity: 1;
+}
+
+#working-with {
+	list-style-type: none;
+	margin:0;
+	padding:0px;
+	li {
+		display:inline-block;
+		padding-right: 35px;
+	}
+}
